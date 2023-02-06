@@ -34,7 +34,7 @@ Project is:  _ongoing_.
 
 ## limitations
 As the project is ongoing, I have several improvements to make:
-- Randmize and pick most liquid pairs for arbitrage 
+- Randomize and pick most liquid pairs for arbitrage 
 - Define and increase number of trades between pairs for more arbitrage opportunities
 - Implement a modified algorithm that can determine shortest path among X no. of different pairs for arbitrage
 - Derive optimal input amount to maximise profit based on Uniswap's constant product market maker model  
