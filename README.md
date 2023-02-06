@@ -40,6 +40,3 @@ As the project is ongoing, I have several improvements to make:
 - Derive optimal input amount to maximise profit based on Uniswap's constant product market maker model  
 - Factor gas output and transaction fees
 
-## Acknowledgements
-Give credit here.
-- This project was partly inspired from [Ethereum and Solidity: The Complete Developer's guide](https://e-prep.udemy.com/course/ethereum-and-solidity-the-complete-developers-guide/).
