@@ -2,10 +2,7 @@
 > This projects mimics an arbitrage bot that swaps a tokenB for tokenC on Uniswap, then swaps tokenC for tokenB on SushiSwap. It is a test prototype that I'm using to make further improvements. 
 ## Table of Contents
 * [General Info](#general-information)
-* [Technologies Used](#technologies-used)
-* [Features](#features)
 * [Project Status](#project-status)
-* [Acknowledgements](#acknowledgements)
 * [Limitations](#limitations)
 <!-- * [License](#license) -->
 
