@@ -1,5 +1,5 @@
 # Project Name
-> This projects mimics an arbitrage bot that swaps a tokenB for tokenC on Uniswap, then swaps tokenC for tokenB on SushiSwap. It is a test prototype that I'm using to make further improvements. 
+> This projects mimics an arbitrage bot that leverages on flashloans to swap a tokenB for tokenC on Uniswap, then swaps tokenC for tokenB on SushiSwap. It is a test prototype that I'm using to make further improvements. 
 ## Table of Contents
 * [Set up](#setup)
 * [Project Status](#project-status)
@@ -8,26 +8,20 @@
 
 
 ## Setup
-I used solidity >= 0.6.6 to write the smart contract. The codebase will require you to include the respective Tokens which you wish to swap. You can input this in the test.js and the smart contract: FlashSwap.sol . 
+I used solidity >= 0.6.6 to write the smart contract. The codebase will require you to include the respective Tokens which you wish to swap. You can input these token addresses in the test.js and the smart contract: FlashSwap.sol 
 
-First you need to set up hardhat in your directory, run the following command:
-``` 
-npm install --save-dev hardhat
-npm install --save-dev @nomicfoundation/hardhat-chai-matchers
-```
+You will also need to include a whale's address for tokenB. Hardhat will impersonate that address and use its funds to send tokens to the contract. The amount of which needs to be specified by you.
 
-Then create a hardhat project and just press ```enter``` all the way:
+First, install through: 
 ```
-npx hardhat
-```
-Note if running the program doesn't work, you could try uninstalling this plugin:
-```
-npm uninstall @nomiclabs/hardhat-waffle ethereum-waffle
+git clone https://github.com/potaytoh2/Arbitrage-prototype 
+npm install
 ```
 To deploy code:
 ```
 npx hardhat run --network <your-network> scripts/deploy.js
 ```
+
 
 ## Project Status
 Project is:  _ongoing_.
