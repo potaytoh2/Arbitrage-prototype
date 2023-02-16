@@ -1,16 +1,18 @@
 # Project Name
-> This projects mimics an arbitrage bot that leverages on flashloans to swap a tokenB for tokenC on Uniswap, then swaps tokenC for tokenB on SushiSwap. It is a test prototype that I'm using to make further improvements. 
+> This projects mimics an arbitrage bot that leverages on flashloans to swap a tokenB for tokenC on Uniswap, then swaps tokenC for tokenB on SushiSwap. It is a test prototype that I'm using to make further improvements.
+
 ## Table of Contents
 * [Set up](#setup)
 * [Project Status](#project-status)
 * [Limitations](#limitations)
 <!-- * [License](#license) -->
 
-
 ## Setup
 I used solidity >= 0.6.6 to write the smart contract. The codebase will require you to include the respective Tokens which you wish to swap. You can input these token addresses in the test.js and the smart contract: FlashSwap.sol 
 
 You will also need to include a whale's address for tokenB. Hardhat will impersonate that address and use its funds to send tokens to the contract. The amount of which needs to be specified by you.
+
+Lastly, fill up the config.js file (as indicated by the comments)  
 
 First, install through: 
 ```
@@ -21,7 +23,6 @@ To deploy code:
 ```
 npx hardhat run --network <your-network> scripts/deploy.js
 ```
-
 
 ## Project Status
 Project is:  _ongoing_.
